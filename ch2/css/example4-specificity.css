@@ -1,0 +1,17 @@
+
+#cfText{
+    color: green;
+}
+.cf-text {
+    color: brown!important ; /*επιβάλω τον κανόνα εκτός specificity */
+}
+
+p {
+    color: red;
+}
+
+p {
+    color: blue;
+}
+ 
+ 
