@@ -1,0 +1,35 @@
+.container{
+    display: flex;   /* την αποκτούν τα παιδιά του*/
+    width: 90%;
+    height: 500px;
+    border: 1px solid black;
+
+    /* Οριζόντια στοίχιση*/
+    justify-content: flex-start ; /* το justify-context λειτουργεί μόνο σε display: flex*/
+    justify-content: flex-end ;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+    /* Κάθετη Στοίχιση */
+    align-items: start;
+    align-items: center;
+    align-items: end;
+    align-items: stretch;  /* */
+
+
+}
+
+
+
+/*ολα τα elements με class box*/
+div[class^="box"] {
+    width: 200px;
+    height: 200px;
+    margin: 0 5px;
+    background-color: lightblue;
+    border: 1px solid black;
+    
+}
+
