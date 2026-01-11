@@ -1,0 +1,57 @@
+.container {
+    position: relative;   
+    width: 800px;
+    height: 400px;
+    background-color:lightblue ;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+    
+
+
+.box1 {
+    border: 1px solid black;
+    padding: 80px;
+    background-color: aqua;
+}
+
+.box2 {
+    border: 1px solid black;
+    padding: 80px;
+    background-color: brown;
+}
+
+.box3 {
+    border: 1px solid black;
+    padding: 80px;
+    background-color: green;
+}
+
+.item-relative {
+    position: relative;
+                         /* σε σχέση με τη θέση που είχες πριν θα μετακινηθείς 25px κάτω και 25px δεξιά*/
+    top: -25px;          /* με -25 πάει πάνω*/
+    left: 25px;         /* με -25 πάει αριστερά*/
+}
+
+
+.item-absolute {  /* σχετίζεται με position: relative του parent, δηλαδή του container ****/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item-fixed {  /*παραμένει στην ίδια θέση αν κάνω scroll προς τα κάτω*/
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+}
+
+   /* υποχρεωρικά να υπάρχει position relative -αλλίως δεν εφαρμόζεται z-index */
+.z-front {    
+    z-index: 1; /*φέρνει μπροστά στο προσκήνιο*/
+}
