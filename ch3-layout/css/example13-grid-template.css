@@ -1,0 +1,30 @@
+.container-grid1 {
+     /*στον parent display:grid*/
+    display: grid;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+     grid-template-columns: 20% 60% 20%; 
+    /* grid-auto-rows:auto ; */
+}
+
+.container-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 60px 120px; /*1η γραμμή ύψος 60px , η 2η γραμμή 120px*/
+}
+
+.container-grid3 {
+    display: grid;
+    /*πιο γρήγορος τρόπος,σε σχέση με το παραπάνω*/
+    grid-template-columns: repeat(3, 1fr) 2fr; 
+    grid-template-rows: 100px; /*η πρώτη γραμμή 100px*/
+    grid-auto-rows: 50px;   /*οι υπόλοιπες γραμμές 50px*/
+}
+
+div[class^="grid"] {
+    border: 1px solid red;
+}
+
+div[class^="container"]{
+     margin-top: 20px;
+}
+
