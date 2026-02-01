@@ -1,0 +1,33 @@
+/* Large */
+/* Apply these CSS rules only when the screen width is between 992px and 1200px */
+@media (min-width:992px) and (max-width:1200px) {
+    body {
+        background-color: green;
+    }  
+}
+
+
+/* Extra Large */
+@media (min-width:1201px) and (max-width:1400px) {
+    body {
+        background-color: red;
+    }  
+}
+
+
+/* xx-Large */
+/*Apply these CSS rules only when the screen width is 1401 pixels or wider.*/
+@media (min-width:1401px) {
+    body {
+        background-color: blue;
+    }    
+}
+
+
+/* xx-small, small, medium */   
+/*Apply these CSS rules only when the screen width is 991 pixels or smaller. */
+@media (max-width:991px) {
+    body {
+        background-color: yellow;
+    }  
+}

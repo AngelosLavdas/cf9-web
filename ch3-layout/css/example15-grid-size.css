@@ -1,0 +1,47 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+     /* gap: 10px;   αφήνει κενό μεταξύ των grid items*/
+     /*Η ιδιότητα gap ορίζει την απόσταση μεταξύ των στοιχείων σε ένα grid. Στην τιμή της ιδιότητας στο γονικό στοιχείο ορίζουμε την επιθυμητή απόσταση με μονάδες μέτρησης - px, % κ.λπ.*/
+}
+
+
+div[class^="grid"] {
+    border: 1px solid black;
+}
+
+    /* gap: 10px;   αφήνει κενό 1η με 2η σειρά*/
+ 
+
+/* 1ος τρόπος */
+/* .grid-item-1{
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: span 2 ;
+     
+} */
+
+
+/* 2ος τρόπος */
+/* .grid-item-1{
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 3 ; θα σταματησει πριν τη στήλη 3 
+    } */
+
+
+
+/*3ος τρόπος */
+.grid-item-1 {
+    background-color: green;
+    grid-column-start: 1 / 3; 
+    /* ξεκίνα από την 1 και σταμάτα  πριν την 3η στήλη*/
+}
+
+ 
+
+/* div[class^="grid"]{
+    border: 1px solid black;
+} */
