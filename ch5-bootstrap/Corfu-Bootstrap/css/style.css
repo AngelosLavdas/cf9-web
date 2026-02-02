@@ -1,6 +1,8 @@
-/* .bg-dark {
+/* .bg-dark { 
   background-color: #006994!important;
 } */
+ /*  Δεν είναι καλή πρακτική να αλλάζω τις ιδιότητες του Bootstrap. */
+
 
 .bg-blue {
   background-color: #006994;
@@ -14,4 +16,18 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   /* min-height: 50%; */
+
+}
+
+.line {
+  background-color: #006994;
+}
+
+.card-img {
+  height: 250px;
+}
+
+.social a {
+  color: white;
+  font-size: 2rem;
 }
