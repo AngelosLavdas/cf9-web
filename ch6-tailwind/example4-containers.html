@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!--max-w είναι το max-width -->                   <!--m-auto στοίχιση στο κέντρο -->
+    <div class="bg-blue-300 text-green-600 px-4 w-full lg:max-w-7xl md:max-w-3xl mx-auto"> 
+        <h1>Hello World</h1>
+    </div>
+
+    <div class="bg-amber-500 text-white p-4 w-full mx-auto md:max-w-5xl my-5">
+        <h1>Hello World</h1>
+    </div>
+    
+    <div class="border border-2 border-green-950 p-3 mx-auto w-full sm:max-w-4xl">
+        <h1>Hello World</h1>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- mx-auto το κεντράρει οριζόντια-->
+<!-- lg: max-w-7xl είναι ένας responsive utility variant στο Tailwind CSS -->
+<!-- lg: max-w-7xl = Όταν η οθόνη είναι ≥ 1024px, από lg και πάνω οθόνες, το στοιχείο έχει μέγιστο πλάτος 1280px.
+Σε μικρότερες οθόνες, η κλάση δεν εφαρμόζεται και το στοιχείο χρησιμοποιεί το default ή άλλες κλάσεις που έχεις ορίσει.-->
+
+
+<!-- md: max-w-5xl :  κάνε την οθόνη 1024px  ή πλάτος 64rem ( 1rem=16px, 64*16=1024px)ενεργοποιείται οταν η οθόνη
+είναι τουλάχιστον 768px και άνω ,δηλαδή από 768pixels ή  (48rem)  και πάνω, το στοιχείο έχει μέγιστο πλάτος 1024px.                     -->
+
+
+<!-- sm: max-w-4xl : κάνε την οθόνη 896px ή πλάτος 56rem ( 1rem=16px, 56*16=896px)ενεργοποιείται οταν η οθόνη
+είναι τουλάχιστον 640px(από sm οθόνες και άνω),δηλαδή από 640 και πάνω, το στοιχείο έχει μέγιστο πλάτος 896px.
+max-w-4xl → Ορίζει μέγιστο πλάτος 56rem (δηλαδή 896px).
+sm: → Ενεργοποιεί την κλάση μόνο όταν το viewport είναι ≥ 640px (breakpoint sm) -->
+
+
+<!-- 
+
+Breakpoint prefix	Minimum width	CSS
+sm	40rem (640px)	@media (width >= 40rem) { ... }
+md	48rem (768px)	@media (width >= 48rem) { ... }
+lg	64rem (1024px)	@media (width >= 64rem) { ... }
+xl	80rem (1280px)	@media (width >= 80rem) { ... }
+2xl	96rem (1536px)	@media (width >= 96rem) { ... }    
+
+-->
+
+<!-- max-w-3xs   max-width: var(--container-3xs); /* 16rem (256px) */
+max-w-2xs   max-width: var(--container-2xs); /* 18rem (288px) */
+max-w-xs    max-width: var(--container-xs); /* 20rem (320px) */
+max-w-sm    max-width: var(--container-sm); /* 24rem (384px) */
+max-w-md    max-width: var(--container-md); /* 28rem (448px) */
+max-w-lg    max-width: var(--container-lg); /* 32rem (512px) */
+max-w-xl    max-width: var(--container-xl); /* 36rem (576px) */
+max-w-2xl   max-width: var(--container-2xl); /* 42rem (672px) */
+max-w-3xl   max-width: var(--container-3xl); /* 48rem (768px) */
+max-w-4xl   max-width: var(--container-4xl); /* 56rem (896px) */
+max-w-5xl   max-width: var(--container-5xl); /* 64rem (1024px) */
+max-w-6xl   max-width: var(--container-6xl); /* 72rem (1152px) */
+max-w-7xl   max-width: var(--container-7xl); /* 80rem (1280px) */ -->
+
+
+ 
